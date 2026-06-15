@@ -1,0 +1,10 @@
+/build/
+/build-release-windows/
+/build-release-linux/
+/dist/
+/output/*
+!/output/.gitkeep
+*.user
+certificates/*.pfx
+certificates/*.p12
+certificates/*.pvk

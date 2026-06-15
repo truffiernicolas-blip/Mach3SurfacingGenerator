@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Mach3 Surfacing Generator
+Comment=Générateur de G-code de surfaçage pour Mach3
+Exec=Mach3SurfacingGenerator
+Icon=Mach3SurfacingGenerator
+Terminal=false
+Categories=Utility;Engineering;
+Keywords=CNC;Mach3;G-code;Surfaçage;

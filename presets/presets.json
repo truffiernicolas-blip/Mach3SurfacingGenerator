@@ -1,0 +1,58 @@
+{
+  "tools": [
+    {
+      "name": "Fraise 2 dents 6 mm",
+      "toolNumber": 2,
+      "diameter": 6.0,
+      "fluteCount": 2,
+      "overlapPercent": 30.0,
+      "recommendedSafeZ": 10.0
+    },
+    {
+      "name": "Fraise a surfacer 20 mm",
+      "toolNumber": 1,
+      "diameter": 20.0,
+      "fluteCount": 2,
+      "overlapPercent": 30.0,
+      "recommendedSafeZ": 5.0
+    },
+    {
+      "name": "Fraise a surfacer 40 mm",
+      "toolNumber": 1,
+      "diameter": 40.0,
+      "fluteCount": 2,
+      "overlapPercent": 35.0,
+      "recommendedSafeZ": 8.0
+    }
+  ],
+  "materials": [
+    {
+      "name": "Labelite - finition 2 dents",
+      "spindleSpeed": 12000,
+      "feedXY": 2002.1,
+      "plungeFeed": 667.4,
+      "recommendedDepthPerPass": 0.5
+    },
+    {
+      "name": "Labelite - rainurage 2 dents",
+      "spindleSpeed": 12000,
+      "feedXY": 1598.9,
+      "plungeFeed": 533.0,
+      "recommendedDepthPerPass": 0.5
+    },
+    {
+      "name": "Bois tendre",
+      "spindleSpeed": 16000,
+      "feedXY": 1200.0,
+      "plungeFeed": 300.0,
+      "recommendedDepthPerPass": 1.0
+    },
+    {
+      "name": "Aluminium",
+      "spindleSpeed": 10000,
+      "feedXY": 500.0,
+      "plungeFeed": 120.0,
+      "recommendedDepthPerPass": 0.3
+    }
+  ]
+}

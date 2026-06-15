@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.nicolastruffier.Mach3SurfacingGenerator</id>
+  <name>Mach3 Surfacing Generator</name>
+  <summary>Générateur de G-code de surfaçage pour Mach3</summary>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <developer id="io.github.nicolastruffier">
+    <name>Nicolas Truffier</name>
+  </developer>
+  <description>
+    <p>
+      Application Qt permettant de générer et prévisualiser un parcours
+      rectangulaire de surfaçage compatible avec Mach3.
+    </p>
+  </description>
+  <launchable type="desktop-id">Mach3SurfacingGenerator.desktop</launchable>
+  <releases>
+    <release version="@PROJECT_VERSION@" date="2026-06-15"/>
+  </releases>
+</component>

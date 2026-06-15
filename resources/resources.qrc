@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/branding">
+        <file alias="logo.png">../assets/logo-256.png</file>
+    </qresource>
+    <qresource prefix="/defaults">
+        <file alias="presets.json">../presets/presets.json</file>
+    </qresource>
+</RCC>
