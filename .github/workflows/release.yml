@@ -17,15 +17,15 @@ jobs:
       - uses: jurplel/install-qt-action@v4
         with:
           version: "6.8.*"
-          arch: "win64_mingw"
+          arch: "win64_msvc2022_64"
+      - uses: ilammy/msvc-dev-cmd@v1
       - name: Build Windows release
         shell: pwsh
         run: |
           $qt = Split-Path (Get-Command qmake.exe).Source -Parent | Split-Path -Parent
-          $mingw = Split-Path (Get-Command g++.exe).Source -Parent | Split-Path -Parent
           .\scripts\Build-WindowsRelease.ps1 `
             -QtDirectory $qt `
-            -MinGwDirectory $mingw `
+            -MinGwDirectory "" `
             -NinjaDirectory (Split-Path (Get-Command ninja.exe).Source -Parent) `
             -SkipSigning
       - uses: actions/upload-artifact@v4

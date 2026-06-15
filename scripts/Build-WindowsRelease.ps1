@@ -20,7 +20,18 @@ $releaseName = "Mach3SurfacingGenerator-$version-windows-x64"
 $stageDirectory = Join-Path $distDirectory $releaseName
 $archivePath = Join-Path $distDirectory "$releaseName.zip"
 
-$env:PATH = "$MinGwDirectory\bin;$NinjaDirectory;$env:PATH"
+$pathEntries = @()
+if (-not [string]::IsNullOrWhiteSpace($MinGwDirectory) -and
+    (Test-Path -LiteralPath (Join-Path $MinGwDirectory "bin"))) {
+    $pathEntries += (Join-Path $MinGwDirectory "bin")
+}
+if (-not [string]::IsNullOrWhiteSpace($NinjaDirectory) -and
+    (Test-Path -LiteralPath $NinjaDirectory)) {
+    $pathEntries += $NinjaDirectory
+}
+if ($pathEntries.Count -gt 0) {
+    $env:PATH = ($pathEntries -join ";") + ";$env:PATH"
+}
 
 cmake -S $root -B $buildDirectory -G Ninja `
     "-DCMAKE_PREFIX_PATH=$QtDirectory" `
